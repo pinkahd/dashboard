@@ -14,6 +14,7 @@ export type WidgetType =
   | "totd-chemical-elements"
   | "totd-world-countries"
   | "twitter-stats"
+  | "weather"
   | "website"
   | "youtube-stats";
 
@@ -137,6 +138,15 @@ const widgetProperties = {
       headlineIcon: "twitter",
     },
   },
+  weather: {
+    configurable: true,
+    widgetType: "weather",
+    category: "general",
+    initialHeight: 2,
+    initialWidth: 2,
+    initialOptions: {},
+    initialMeta: { updateCycle: { hours: 4 } },
+  },
   website: {
     configurable: true,
     widgetType: "website",
@@ -205,6 +215,10 @@ export const widgetImports = {
   "twitter-stats": {
     component: async () => import("widgets/twitter-stats"),
     configuration: async () => import("widgets/twitter-stats/configuration"),
+  },
+  weather: {
+    component: async () => import("widgets/weather"),
+    configuration: async () => import("widgets/weather/configuration"),
   },
   website: {
     component: async () => import("widgets/website"),

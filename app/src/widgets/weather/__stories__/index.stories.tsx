@@ -9,13 +9,13 @@ const Story = () => {
   return (
     <Widget
       {...connectedWidgetProps}
-      id="{{ kebabCase name }}-01"
-      type="{{ kebabCase name }}"
-      options=\{{}}
-      data=\{{}}
-      meta={initialMeta("{{ kebabCase name }}")}
+      id="weather-01"
+      type="weather"
+      options={{}}
+      data={{}}
+      meta={initialMeta("weather")}
     />
   );
 };
 
-storiesOf("Widgets/{{ properCase name }}", module).add("Variants", () => <Story />);
+storiesOf("Widgets/Weather", module).add("Variants", () => <Story />);

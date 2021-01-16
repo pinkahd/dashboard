@@ -166,6 +166,14 @@
         "404": "Unknown username"
       }
     },
+    "weather": {
+      "name": "Weather",
+      "headline": "",
+      "configuration": {
+        "latitude": "Latitude",
+        "longtitude": "Longtitude"
+      }
+    },
     "website": {
       "name": "Website",
       "headline": "",

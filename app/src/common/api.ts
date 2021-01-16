@@ -13,6 +13,8 @@ export const UNSPLASH_RANDOM_PHOTO = "/unsplash/random";
 
 export const YOUTUBE_STATS = "/youtube/stats";
 
+export const WEATHER = "/weather";
+
 export default axios.create({
   baseURL: API_BASE_URL,
   timeout: 10000,
